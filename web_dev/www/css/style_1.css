@@ -1,0 +1,119 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  line-height: 1.4em;
+  vertical-align: baseline;
+  text-decoration: none;
+  outline: 0;
+}
+
+body{
+  width: 100%;
+}
+
+header{
+  margin: 20px;
+}
+#header_text{
+  color: #c8e6c9;
+}
+
+main{
+  margin-left: 20px;
+  display: block;
+}
+
+footer{
+  clear: both;
+  margin: 20px;
+}
+
+.column1{
+  border-width: 2px;
+  border-style: groove;
+  border-color: black;
+  width: 20%;
+  float: left;
+  margin: 15px;
+}
+
+.column2{
+  border-width: 2px;
+  border-style: groove;
+  border-color: magenta;
+  width: 20%;
+  float: left;
+  margin: 15px;
+}
+
+.column3{
+  border-width: 2px;
+  border-style: dashed;
+  border-color: brown;
+  width: 20%;
+  float: left;
+  margin: 15px;
+}
+
+.column4{
+  border-width: 2px;
+  border-style: double;
+  border-color: red;
+  width: 20%;
+  float: left;
+  margin: 15px;
+}
+
+.column5{
+  border-width: 2px;
+  border-style: outset;
+  border-color: blue;
+  width: 20%;
+  float: left;
+  margin: 15px;
+}
+
+.column6{
+  border-width: 2px;
+  border-style: solid yellow;
+  border-color: black;
+  width: 20%;
+  float: left;
+  margin: 15px;
+}
+
+.column7{
+  border-width: 2px;
+  border-style: dotted;
+  border-color: purple;
+  width: 20%;
+  float: left;
+  margin: 15px;
+}
+
+.column8{
+  border-width: 2px;
+  border-style: ridge;
+  border-color: cyan;
+  width: 20%;
+  float: left;
+  margin: 15px;
+}
+
+a:link{
+  color: green;
+  text-decoration: underline;
+}
+
+a:visited{
+  color: green;
+}
+
+a:hover{
+  color: blue;
+}
+
+a:active{
+  color: red;
+}

@@ -1,0 +1,104 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  line-height: 1.4em;
+  vertical-align: baseline;
+  text-decoration: none;
+  outline: 0;
+  font-family: sans-serif
+}
+
+body{
+  width: 100%;
+}
+
+header{
+  height: 100px;
+  background-color: #212121;
+}
+
+main{
+  height: 618px;
+  width: 70%;
+  background-color: #ffea00;
+  float: left;
+}
+nav{
+  padding-top: 250px;
+  height: 368px;
+  width: 15%;
+  background-color: #616161;
+  float: left;
+}
+aside{
+  height: 618px;
+  width: 15%;
+  background-color: #e0e0e0;
+  float: left;
+}
+
+footer{
+  height: 75px;
+  background-color: #4e342e;
+  clear: both;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.logo{
+  float: left;
+  margin-left: 650px;
+  margin-top: 10px ;
+}
+
+.sign_in{
+  float: left;
+  margin-left: 600px;
+  margin-top: 30px ;
+}
+
+.content{
+  margin-top: 75px;
+  margin-left:250px;
+}
+
+#main_text{
+  margin-left: 110px;
+  font-size: 20pt;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+#main_img{
+  margin: 0px;
+}
+
+#logo_text{
+  color: #fafafa;
+}
+
+#sign_in_text{
+  color: #fafafa;
+}
+
+#footer_text{
+    color: #e0e0e0;
+}
+
+a:link{
+  color: #e0e0e0;
+}
+
+a:visited{
+  color: #e0e0e0;
+}
+
+a:hover{
+  color: #fafafa;
+}
+
+a:active{
+  color: #d7ccc8;
+}

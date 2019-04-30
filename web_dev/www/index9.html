@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="JavaScript_2">
+    <meta name="keywords" content="JavaScript">
+    <meta name="author" content="Dmytro Masliuk">
+    <meta name="bot" content="all">
+    <title>Strona startowa</title>
+    <script type="text/javascript">
+      var x = prompt("Wpisz liczbę:",'');
+      if (x % 2 == 0)
+        alert("Liczba jest parzysta!");
+      else
+        alert("Liczba jest nieparzysta");
+
+      var a = prompt("Podaj liczbę -a-:",'');
+      var b = prompt("Podaj liczbę -b-:",'');
+      if (a == b)
+        alert("Podane liczbe są równe!");
+      else {
+        if (a > b)
+          alert("Liczba -a- jest większą od -b-!");
+        else
+          alert("Liczba -b- jest większą od -a-!");
+      }
+
+      a = prompt("Podaj liczbę -a-:",'');
+      b = prompt("Podaj liczbę -b-:",'');
+      if (a == b)
+        alert("Podane liczbe są równe!");
+      else {
+        if (a > b)
+          alert("Liczba -b- jest mniejsza od -a-!");
+        else
+          alert("Liczba -a- jest mniejsza od -b-!");
+      }
+
+      a = prompt("Podaj liczbę -a-:",'');
+      b = prompt("Podaj liczbę -b-:",'');
+      if (a >= 0)
+        alert("Liczba -a- jest dodatnia!");
+      else
+        alert("Liczba -a- jest ujemna!");
+      if (b >= 0)
+        alert("Liczba -b- jest dodatnia!");
+      else
+        alert("Liczba -b- jest ujemna!");
+
+      var ocena = prompt("Podaj ocenę:",'');
+      switch(ocena){
+        case '1':
+          alert("To jest zła ocena!");
+          break;
+        case '2':
+          alert("To jest ocena dla ludzi bez ambicji!");
+          break;
+        case '3':
+          alert("To jest ocena dla przeciętniaków!");
+          break;
+        case '4':
+          alert("To jest świetna ocena!");
+          break;
+        case '5':
+          alert("To jest wysoka ocena!");
+          break;
+        case '6':
+          alert("To jest ocena oniryczna!");
+          break;
+        default:
+          alert("Nie ma takiej oceny!");
+          break;
+      }
+
+      var a = prompt("Podaj liczbę -a-:",'');
+      var b = prompt("Podaj liczbę -b-:",'');
+      if (a % b == 0)
+        alert("A JEST PODZIELNA PRZEZ B");
+      else
+        alert("A NIE JEST PODZIELNA PRZEZ B");
+
+      a = prompt("Podaj liczbę -a-:",'');
+      b = prompt("Podaj liczbę -b-:",'');
+      var c = prompt("Podaj liczbę -c-:",'');
+      var delta = parseInt(b) * parseInt(b) - 4 * parseInt(a) * parseInt(c);
+      if (delta < 0)
+        alert("Równanie nie ma pierwiastków!");
+      else{
+        if (delta == 0){
+          var x1 = -parseInt(b) / (2 * parseInt(a));
+          alert("Równanie ma jeden pierwiastek: " + x1);
+        }
+        else if (delta > 0){
+          var x1 = (-parseInt(b) - Math.sqrt(delta)) / (2 * parseInt(a));
+          var x2 = (-parseInt(b) + Math.sqrt(delta)) / (2 * parseInt(a));
+          alert("Równanie ma dwa pierwiastki:\nx1 = " + x1 + "\nx2 = "+ x2);
+        }
+      }
+
+      a = prompt("Podaj liczbę -a-:",'');
+      b = prompt("Podaj liczbę -b-:",'');
+      c = prompt("Podaj liczbę -c-:",'');
+      if (a == b && a == c && b == c) alert(a + " " + b + " " + c);
+      else{
+        if (a >= b && a > c && b > c) alert(a + " " + b + " " + c);
+        if (a > b && a >= c && c > b) alert(a + " " + c + " " + b);
+        if (b >= a && b > c && a > c) alert(b + " " + a + " " + c);
+        if (b > a && b >= c && c > a) alert(b + " " + c + " " + a);
+        if (c >= a && c > b && a > b) alert(c + " " + a + " " + b);
+        if (c > a && c >= b && b > a) alert(c + " " + b + " " + a);
+      }
+
+      a = prompt("Podaj pierwszą długość trójkąta:",'');
+      b = prompt("Podaj drugą długość trójkąta:",'');
+      c = prompt("Podaj trzecią długość trójkąta:",'');
+      if (a + b > c && b + c > a && c + a >b){
+        if (parseInt(c) * parseInt(c) == parseInt(a) * parseInt(a) + parseInt(b) * parseInt(b))
+          alert("Trójkąt jest prostokątny!");
+        else
+          alert("Trójkąt nie jest prostokątny!");
+      }
+      else
+        alert("Trójkąt w ogóle nie może być utworzony!");
+
+      a = prompt("Podaj liczbę -a-:",'');
+      b = prompt("Podaj liczbę -b-:",'');
+      c = prompt("Podaj liczbę -c-:",'');
+      if (a >= b && a >= c) alert("Liczba -a- jest maksymalną!");
+      if (b >= a && b >= c) alert("Liczba -b- jest maksymalną!");
+      if (c >= a && c >= b) alert("Liczba -c- jest maksymalną!");
+      if (a <= b && a <= c) alert("Liczba -a- jest minimalną!");
+      if (b <= a && b <= c) alert("Liczba -b- jest minimalną!");
+      if (c <= a && c <= b) alert("Liczba -c- jest minimalną!");
+      alert("Średnia z trzech podanych liczb jest " + (parseInt(a) + parseInt(b) + parseInt(c)) / 3);
+      if (b > a && a > c) alert("Liczba -a- jest medianą!");
+      if (a > b && b > c) alert("Liczba -b- jest medianą!");
+      if (a > c && c > b) alert("Liczba -c- jest medianą!");
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="JavaScript_2">
+    <meta name="keywords" content="JavaScript">
+    <meta name="author" content="Dmytro Masliuk">
+    <meta name="bot" content="all">
+    <title>Strona startowa</title>
+    <script type="text/javascript">
+      var x = 0;
+      do{
+        document.write("To jest efekt pętli while!<br>");
+        x++;
+      }while(x < 100)
+
+      document.write("<br>");
+      x = 1;
+      do{
+        if (x % 2 != 0)
+          document.write(x + "<br>");
+        x++;
+      }while(x < 21)
+
+      document.write("<br>");
+      x = 1;
+      do{
+        if (x % 3 == 0)
+          document.write(x + "<br>");
+        x++;
+      }while(x < 21)
+
+      document.write("<br>");
+      do{
+        x = prompt("Podaj dowolną liczbę:",'');
+      }while(x % 12 != 0)
+      alert("Podałeś liczbę podzielną przez 12, więc kończę działanie pętli.");
+
+      document.write("<br>");
+      var sr = parseFloat(sr, 0);
+      var i = parseInt(i, 1);
+      do{
+        x = prompt("Podaj dowolną liczbę:",'');
+        i++;
+        sr = parseFloat(parseInt(x) / i);
+        document.write("arg = " + sr + "<br>");
+      }while(x != 0);
+
+      document.write("<br>");
+      var suma = 0;
+      do{
+        x = prompt("Podaj dowolną liczbę:",'');
+        suma += parseInt(x);
+        document.write("suma = " + suma + "<br>");
+      }while(suma < 100)
+
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
