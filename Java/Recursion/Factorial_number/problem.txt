@@ -1,0 +1,1 @@
+Try calculate factorial number.
